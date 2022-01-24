@@ -27,7 +27,7 @@ async function start() {
             useNewURLParser: true,
             useUnifiedTopology: true
         })
-        app.listen(5000, () => console.log(`App is up Now on port ${PORT}`))
+        app.listen(PORT, () => console.log(`App is up Now on port ${PORT}`))
 
     } catch (e) {
         console.log('Server Error', e.message)
