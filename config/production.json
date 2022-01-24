@@ -1,5 +1,5 @@
 {
-  "port": 80,
+  "port": 8090,
   "jwtSecret": "voglas secret code",
   "mongoUri": "mongodb+srv://voglas:ssgfhjkm@cluster0.apkxd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   "baseUrl": "http://glassnerve.com"
