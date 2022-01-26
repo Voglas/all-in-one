@@ -12,6 +12,7 @@
     "prod": "npm install && npm run client:install && npm run client:build && npm run start",
     "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
   },
+  "homepage": "http://glassnerve.com",
   "keywords": [
     "mern",
     "react",
