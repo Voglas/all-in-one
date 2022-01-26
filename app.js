@@ -12,7 +12,6 @@ app.use('/api/link', require('./routes/link.routes'))
 app.use('/t', require('./routes/redirect.routes'))
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static("public"));
 
     app.use('/', express.static(path.join(__dirname, 'client', 'build')))
 
