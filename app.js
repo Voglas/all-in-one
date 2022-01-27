@@ -26,10 +26,10 @@ async function start() {
     try {
         await mongoose.connect(config.get('mongoUri'), {
             useNewURLParser: true,
-            useUnifiedTopology: true
+            useUnifiedTopology: true,
+            useCreateIndex: true
         })
         app.listen(PORT, () => console.log(`App is up Now on port ${PORT}`))
-
     } catch (e) {
         console.log('Server Error', e.message)
         process.exit(1)
