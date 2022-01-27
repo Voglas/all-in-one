@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 
     console.log('App is up!')
 
-    app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+    app.use('/', express.static(path.join('client', 'build')))
 
     // app.use("/static", express.static('./static/'));
 
