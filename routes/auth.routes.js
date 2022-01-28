@@ -7,7 +7,8 @@ const User = require('../models/User')
 const router = Router()
 
 // /api/auth/register
-router.post('/register',
+router.post(
+    '/register',
     [
         check('email',  'Incorrect email').isEmail(),
         check('password', 'Minimal length of password is 6 simbols').isLength({min:6})
@@ -57,7 +58,7 @@ router.post(
             if (!errors.isEmpty()) {
                 return res.status(400).json({
                     errors: errors.array(),
-                    message: 'Incorrect login data'
+                    message: 'Incorrect login data!'
                 })
             }
 

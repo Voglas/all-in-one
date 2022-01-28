@@ -10,10 +10,10 @@ const schema = new Schema({
         type: String,
         required: true
     },
-    links: {
+    links: [{
         type: Types.ObjectId,
         ref: 'Link'
-    }
+    }]
 })
 
 module.exports = model('User', schema)
